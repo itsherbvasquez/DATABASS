@@ -6,18 +6,22 @@ function initMap() {
       document.getElementById('map'), {zoom: 4, center: uluru});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
-}
+};
 
-
-var location=[{
-    longitude: "37.510958",
-      latitude: "-77.459601",
-        date1: "06/16/2018",
-          date2: "06/14/2018",
-            code1: "8037",
-              code2:"1223"
-            }]
-$("#SUBMIT").click(function){for (i=0; i<location.length; i++){
-  if(code1 = date1)
-  }
+document.getElementById("sub").onclick = function() {myFunction()};
+function myFunction(){
+    $("form").submit(function(){
+      if ( $("input:first").val() === "8037") {
+        $('map').show();
+        $( "span" ).text( "VALID!" ).show();
+      return true;
+     }
+      $( "span" ).text( "INVALID CODE!" ).show().fadeOut( 1000 );
+      event.preventDefault();
+    });
 }
+$(document).ready(function(){
+var divscript = "<script>function initMap() {var mapDiv = document.getElementById('map');var map = new google.maps.Map(mapDiv, {zoom: 8,center: new google.maps.LatLng(-34.397, 150.644)})}; </script>";
+$(divscript).appendTo('#map');
+
+});

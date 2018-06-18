@@ -15,7 +15,8 @@ body{
   width: 100%;  /* The width is the width of the web page */
 }
 
-.btn{
-  color:black;
-  font-weight: bold;
+
+.btn
+{
+  color: black;
 }
