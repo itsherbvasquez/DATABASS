@@ -10,29 +10,45 @@
     </center>
 <body>
 <center>
-<p>ENTER CODE:</p>
+<p><font color="white">ENTER CODE:</font></p>
+<span style="color:red">
+</span>
+<p id="comein" onclick="signup();"><a href="#">NO CODE? SIGN UP!</a></p>
 <form name= "main" id="form" action="" onsubmit="form";>
   <div>
     <input type="text">
-    <input type="submit" id="sub">
+  </div>
+  <br>
+  <div>
+    <center><button type="submit" class="btn btn-primary" id="sub">GET LOCATION</button></center>
   </div>
 </form>
-<span>
-</span>
 </center>
 <h3><font color="aqua"><text size="1"><marquee>
 21+ INVITE ONLY // UPDATED EVERY 3 WEEKS // DATABASSRVA@GMAIL.COM FOR INVITE CODE
 </marquee></text></font></h3>
 
-
-<div id="map" style="display:">
+<div id="signup" style="display:hidden;">
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="NAME">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="EMAIL">
+      </div>
+    </div>
+    <br>
+    <center><button type="submit" class="btn btn-primary">SUBMIT REQUEST FOR ACCESS</button></center>
+  </form>
+  </div>
+<br>
+<div id="map" style="display:none;">
 </div>
-
     <script src="js\jquery-3.3.1.min.js"></script>
     <script src="bootstrap\js\bootstrap.min.js"></script>
     <script src="js\jquery.validate.min.js"></script>
     <script src="databass.js"></script>
-<script aysnc defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIT1phpAr1_6jgoehPkBUg0opZzOv_aIU&callback=initMap">
-</script>
+    <script aysnc defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIT1phpAr1_6jgoehPkBUg0opZzOv_aIU&callback=initMap"></script>
    </body>
 </html>
